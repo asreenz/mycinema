@@ -100,6 +100,9 @@ body{
 }
 .title-description {
   color: white;
+  position: fixed; /* Stays in view even when scrolling */
+  bottom: 0;
+  left: 0;
 }
 .footer_break {
   word-spacing: 30px;
