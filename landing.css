@@ -98,6 +98,9 @@ body{
 .word_break {
   word-spacing: 10px; /* Increases space by 10 pixels */
 }
+.title-description {
+  color: white;
+}
 .footer_break {
   word-spacing: 30px;
 }
