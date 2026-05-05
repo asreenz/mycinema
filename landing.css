@@ -1,0 +1,138 @@
+  @font-face {
+    font-family: 'test_epicene_displayMdIt';
+    src: url('css/mycinema/testepicenedisplay-mediumitalic-bf661753410cdd8-webfont.woff2') format('woff2'),
+         url('css/mycinema/testepicenedisplay-mediumitalic-bf661753410cdd8-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+  font-family: 'test_epicene_displaymedium';
+    src: url('css/mycinema/testepicenedisplay-medium-bf66175341117d8-webfont.woff2') format('woff2'),
+         url('css/mycinema/testepicenedisplay-medium-bf66175341117d8-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  background-color: black;
+  
+} 
+.cinema_landing{
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 220px);
+      padding: 0 20px 40px;
+      cursor: pointer;
+      user-select: none;
+}
+.cinema_landing_header {
+  color: white;
+  font-family: 'test_epicene_displayMdIt';
+  font-size: 80px;
+  letter-spacing: 2px;
+} 
+
+.cinema_landing h1{
+  font-family: 'test_epicene_displaymedium';
+  font-size: 18px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/*========= work screen ========*/
+.work_screen {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  height: 100vh;
+  color: red;
+  font-family: 'test_epicene_displaymedium';
+  font-size: 15px;
+}
+
+.work_screen .secondcow {
+  color: white;
+  background-color: black;
+}
+
+.left_split {
+  position: relative;
+  overflow: hidden;
+  background: black;
+  height: 100vh;
+}
+
+.fullscreen-img {
+  position: absolute;
+  /* make it large enough that when rotated it fills all edges */
+  width: 100vh;
+  height: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  background-image: url("260429000035740023.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.secondcow-img {
+  position: absolute;
+  /* make it large enough that when rotated it fills all edges */
+  width: 100vh;
+  height: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  background-image: url("260203000091170030.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.right_split {
+  background-color: #F5F5F5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Splits the item into 2 equal columns */
+  gap: 10px; /* Optional spacing between the new halves */
+  color: black;
+  padding: 5% 10% 5% 10%;
+}
+
+.word_break {
+  word-spacing: 10px; /* Increases space by 10 pixels */
+}
+.footer_break {
+  word-spacing: 30px;
+}
+
+
+/* ── Book-style page number ── */
+    .page-number {
+      position: fixed;
+      bottom: 14px;
+      right: 32px;
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      color: black;
+      z-index: 101;
+      font-family: 'test_epicene_displaymedium';
+    }
+ 
+    /* Left side page number */
+    .page-number-left {
+      position: fixed;
+      bottom: 14px;
+      left: 32px;
+      font-size: 20px;
+      letter-spacing: 0.2em;
+      color: black;
+      z-index: 101;
+      font-family: 'test_epicene_displaymedium';
+    }
+.toc-pin {
+  position: fixed;
+  bottom: 14px;
+  right: 0;
+  width: 50%;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  z-index: 100;
+}
