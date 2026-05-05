@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>my cinema</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="landing.css"/>
+</head>
+  <body>
+    <div class="work_screen">
+      <div class="left_split">
+        <div class="fullscreen-img"></div>
+       
+      </div>
+      <div class="right_split">
+        <div class="left_right">
+          <span class="word_break">1 </span>Landing page<br>
+          <span class="word_break">4 </span>Second Cow, a lonely man can only find solace with the neighboring cows 
+        </div>
+        <div class="right_right">
+          <span class="word_break">2026 </span>second cow<br>
+          <span class="word_break">2026 </span>werner herzog residency, azores portugal<br>
+          <span class="word_break">2026 </span>somemore stufffff
+        </div>
+      
+      </div>
+      </div>
+    <!-- Book-style page numbers -->
+<div class="page-number-left">2</div>
+<div class="page-number">3</div>
+    </div>
+
+    <div class="toc-pin">Table of Contents</div>
+<script>
+  document.querySelector('.left_split').addEventListener('click', function() {
+    window.location.href = 'landing.html'; // ← change to your page
+  });
+  document.querySelector('.right_split').addEventListener('click', function() {
+    window.location.href = 'secondcow.html'; // ← change to your page
+  });
+</script>
+  </body>
