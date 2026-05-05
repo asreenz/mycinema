@@ -106,7 +106,7 @@ a{
   position: fixed; /* Stays in view even when scrolling */
   bottom: 0;
   left: 0;
-  padding: 5% 12px 12px 10%;
+  padding: 5% 12px 12px 12px;
   line-height: 10px;
   font-size: 15px;
   font-family: 'test_epicene_displaymedium';
